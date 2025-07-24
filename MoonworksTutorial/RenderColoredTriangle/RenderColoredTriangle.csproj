@@ -20,4 +20,15 @@
     <ProjectReference Include="..\..\lib\MoonWorks\MoonWorks.csproj" />
   </ItemGroup>
 
+	<ItemGroup>
+		<Content Include="Content\**\*.*">
+			<Link>Content\%(RecursiveDir)%(Filename)%(Extension)</Link>
+			<CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+		</Content>
+	</ItemGroup>
+
+	<ItemGroup>
+	  <Content Update="Content\Shaders\Color.frag.hlsl" Link="Content\Shaders\Color.frag.hlsl" />
+	</ItemGroup>
+
 </Project>
