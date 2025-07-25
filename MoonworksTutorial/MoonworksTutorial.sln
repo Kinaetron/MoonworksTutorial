@@ -1,11 +1,13 @@
 ﻿
 Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 17
-VisualStudioVersion = 17.14.36310.24 d17.14
+VisualStudioVersion = 17.14.36310.24
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "RenderColoredTriangle", "RenderColoredTriangle\RenderColoredTriangle.csproj", "{CA8B2EED-8577-43A1-9C85-F08C0087E370}"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MoonWorks", "..\lib\MoonWorks\MoonWorks.csproj", "{0B33FCFE-A4E1-4FB1-CF69-226B54465AE8}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "RenderRectangle", "RenderRectangle\RenderRectangle.csproj", "{4286FD20-2DC3-48BD-A8C5-F3FDF1715925}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -21,6 +23,10 @@ Global
 		{0B33FCFE-A4E1-4FB1-CF69-226B54465AE8}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{0B33FCFE-A4E1-4FB1-CF69-226B54465AE8}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{0B33FCFE-A4E1-4FB1-CF69-226B54465AE8}.Release|Any CPU.Build.0 = Release|Any CPU
+		{4286FD20-2DC3-48BD-A8C5-F3FDF1715925}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{4286FD20-2DC3-48BD-A8C5-F3FDF1715925}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{4286FD20-2DC3-48BD-A8C5-F3FDF1715925}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{4286FD20-2DC3-48BD-A8C5-F3FDF1715925}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
