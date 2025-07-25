@@ -7,7 +7,6 @@
     <Nullable>enable</Nullable>
   </PropertyGroup>
 
-	<Import Project=".\CopyMoonlibs.targets" />
 
 	<ItemGroup>
 		<Content Include="Content\**\*.*">
@@ -16,12 +15,11 @@
 		</Content>
 	</ItemGroup>
 
-  <ItemGroup>
-    <ProjectReference Include="..\..\lib\MoonWorks\MoonWorks.csproj" />
-  </ItemGroup>
 
 	<ItemGroup>
-	  <Content Update="Content\Shaders\Color.frag.hlsl" Link="Content\Shaders\Color.frag.hlsl" />
+	  <ProjectReference Include="..\..\lib\MoonWorks\MoonWorks.csproj" />
 	</ItemGroup>
+
+	<Import Project=".\CopyMoonlibs.targets" />
 
 </Project>
