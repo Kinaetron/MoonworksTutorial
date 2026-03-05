@@ -18,13 +18,12 @@ public struct PositionTextureVertex(Vector2 position, Vector2 texCoord) : IVerte
         VertexElementFormat.Float2
     ];
 
-
     public static uint[] Offsets { get; } = [0, 8];
 }
 
 public class TexturedQuadGame : Game
 {
-    private Texture _texture;
+    private readonly Texture _texture;
     private readonly Sampler _sampler;
     private readonly Buffer _indexBuffer;
     private readonly Buffer _vertexBuffer;
@@ -83,10 +82,10 @@ public class TexturedQuadGame : Game
         _pipeline = GraphicsPipeline.Create(GraphicsDevice, pipelineCreateInfo);
 
         ReadOnlySpan<PositionTextureVertex> vertexData = [
-            new PositionTextureVertex(new Vector2(-1,  1), new Vector2(0, 0)),
-            new PositionTextureVertex(new Vector2( 1,  1), new Vector2(4, 0)),
-            new PositionTextureVertex(new Vector2( 1, -1), new Vector2(4, 4)),
-            new PositionTextureVertex(new Vector2(-1, -1), new Vector2(0, 4)),
+            new PositionTextureVertex(new Vector2(-0.5f, -0.5f), new Vector2(0, 1)),
+            new PositionTextureVertex(new Vector2(0.5f, -0.5f), new Vector2(1, 1)),
+            new PositionTextureVertex(new Vector2(0.5f, 0.5f), new Vector2(1, 0)),
+            new PositionTextureVertex(new Vector2(-0.5f, 0.5f), new Vector2(0, 0)),
         ];
 
         ReadOnlySpan<ushort> indexData = [
@@ -120,7 +119,7 @@ public class TexturedQuadGame : Game
     {
         var cmdbuf = GraphicsDevice.AcquireCommandBuffer();
         var swapchainTexture = cmdbuf.AcquireSwapchainTexture(MainWindow);
-        if (swapchainTexture != null)
+        if (swapchainTexture is not null)
         {
             var renderPass = cmdbuf.BeginRenderPass(
                 new ColorTargetInfo(swapchainTexture, Color.Black)
