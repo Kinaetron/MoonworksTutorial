@@ -9,8 +9,7 @@ internal class Program
              "Textured Quad Example Game",
              800,
              600,
-             ScreenMode.Windowed
-         );
+             ScreenMode.Windowed);
 
         var framePacingSettings = FramePacingSettings.CreateLatencyOptimized(60);
 

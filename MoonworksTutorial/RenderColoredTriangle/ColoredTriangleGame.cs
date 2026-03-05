@@ -99,7 +99,7 @@ public class ColoredTriangleGame : Game
     {
         var cmdbuf = GraphicsDevice.AcquireCommandBuffer();
         var swapchainTexture = cmdbuf.AcquireSwapchainTexture(MainWindow);
-        if (swapchainTexture != null)
+        if (swapchainTexture is not null)
         {
             var renderPass = cmdbuf.BeginRenderPass(
                 new ColorTargetInfo(swapchainTexture, Color.Black)
