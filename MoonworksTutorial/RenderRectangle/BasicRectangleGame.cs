@@ -119,4 +119,8 @@ public class BasicRectangleGame : Game
         }
         GraphicsDevice.Submit(cmdbuf);
     }
+
+    protected override void Step()
+    {
+    }
 }

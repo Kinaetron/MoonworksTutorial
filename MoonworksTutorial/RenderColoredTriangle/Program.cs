@@ -11,7 +11,7 @@ internal class Program
              600,
              ScreenMode.Windowed);
 
-        var framePacingSettings = FramePacingSettings.CreateLatencyOptimized(60);
+        var framePacingSettings = FramePacingSettings.CreateLatencyOptimized(60, 60);
 
         var game = new ColoredTriangleGame(
             new AppInfo("Triangle Example Game", "TriangleExampleGame"),
