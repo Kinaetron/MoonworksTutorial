@@ -12,7 +12,7 @@ internal class Program
              ScreenMode.Windowed
          );
 
-        var framePacingSettings = FramePacingSettings.CreateLatencyOptimized(60);
+        var framePacingSettings = FramePacingSettings.CreateLatencyOptimized(60, 60);
 
         var game = new BasicRectangleGame(
             new AppInfo("Rectangle Example Game", "RectangleExampleGame"),

@@ -111,4 +111,8 @@ public class ColoredTriangleGame : Game
         }
         GraphicsDevice.Submit(cmdbuf);
     }
+
+    protected override void Step()
+    {
+    }
 }

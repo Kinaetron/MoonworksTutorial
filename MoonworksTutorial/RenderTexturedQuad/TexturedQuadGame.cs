@@ -133,4 +133,8 @@ public class TexturedQuadGame : Game
         }
         GraphicsDevice.Submit(cmdbuf);
     }
+
+    protected override void Step()
+    {
+    }
 }
